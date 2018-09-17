@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Presentación The Software Design Lab</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class="present">
+					<h2> Vulnerabilidades en aplicaciones financieras en Colombia </h2>
+					<p> <a href="https://thesoftwaredesignlab.github.io/" target="blank"> The Software Design Lab </a> </p>
+					<p> Universidad de Los Andes </p>
+				</section>
+				<section class="past">
+					<h3> Agenda </h3>
+					<ol>
+						<li> <p> Introducción </p> </li>
+						<li> <p> Objetivos </p> </li>
+						<li> <p> Investigación </p> </li>
+						<li> <p> Conclusiones parciales </p> </li>
+					</ol>
+				</section>
+				<section>
+					<section>
+						<h3> Introducción </h3>
+					</section>
+					<section>
+						<h3> Android en el mundo </h3> 
+						<img src="img/android-chart.png" width="800px">
+					</section>
+					<section>
+						<h4> ¿Qué es una Vulnerabilidad? </h4>
+						<p>
+							Debilidad en procesos o configuración.
+							Llevan a fallos de confidencialidad, integridad o disponibilidad.
+							<!-- https://ioactive.com/discovering-and-exploiting-a-vulnerability-in-androids-personal-dictionary/ -->
+						</p>
+					</section>
+					<section>
+						<h4> Android y las vulnerabilidades </h4>
+						<img src="img/andvul.png">
+						<small> <small> Imagen tomada de <a href="https://androidvulnerabilities.org/" target="blank"> AndroidVulnerabilities.org </a> </small> </small>
+					</section>
+					<section>
+						<h4> Android y las vulnerabilidades </h4>
+						<img src="img/andhierarchy.png">
+						<br>
+						<small> <small> Imagen tomada de <a href="http://ml-papers.gitlab.io/android.vulnerabilities-2017/appendix/visualizationsEMSE/vtaxonomy.html" target="blank"> Android Related Vulnerabilities </a> </small> </small>
+					</section>
+					<section>
+						<h4> Panorama nacional </h4>
+						<img src="img/pancol.png" style="width: 75%;">
+						<p> Colombia: más de 300 aplicaciones financieras, más de 100 de los bancos registrados </p>
+					</section>
+				</section>
+				<section>
+					<h3 style="padding-bottom: 50px;"> Objetivos </h3>
+					<p style="text-align: justify;">
+						<p class="fragment fade-down"> <small> Identificar vulnerabilidades recurrentes en aplicaciones financieras del país </small> </p>
+						<p class="fragment fade-down"> <small> Catalogar vulnerabilidades de acuerdo a como afectan al usuario y a la empresa </small> </p>
+						<p class="fragment fade-down"> <small> Establecer un orden de seguridad en aplicaciones financieras colombianas </small> </p>
+						<p class="fragment fade-down"> <small> Explotar con éxito vulnerabilidades para así encontrar métodos de mitigación adecuados </small> </p>
+					</p>
+				</section>
+				<section>
+					<section>
+						<h3 style="padding-bottom: 50px;">Investigación</h3>
+						<p> 
+							<ul> 
+								<li> 300 aplicaciones </li>
+								<li> Última versión disponible al 14 de Septiembre de 2018 </li>
+							</ul> 
+						</p>
+					</section>
+					<section>
+						<h3> Evaluación </h3>
+						<div>
+							<p>
+								<small> <strong> Análisis de seguridad </strong> </small>
+							</p>
+							<img src="img/tool.png" style="width: 1200px;">
+						</div>
+					</section>
+					<section>
+						<h3> Evaluación </h3>
+						<div>
+							<p>
+								<small> <strong> Hallazgo de vulnerabilidades </strong> </small>
+							</p>
+							<img src="img/catalog.png" style="width: 1000px;">
+						</div>
+					</section>
+					<section>
+						<h3> Evaluación </h3>
+						<div>
+							<p>
+								<small> <strong> Catalogación de vulnerabilidades </strong> </small>
+							</p>
+							<img src="img/vulgroups.png" style="width: 650px;">
+						</div>
+					</section>
+					<section>
+						<h3> Evaluación </h3>
+						<div>
+							<p>
+								<small> <strong> Asignación a cuadrante </strong> </small>
+							</p>
+							<img src="img/cuadrants.jpg" style="width: 550px;">
+						</div>
+					</section>
+				</section>
+				<section>
+					<h3> Conclusiones parciales </h3>
+					<p style="text-align: justify;">
+					<p class="fragment fade-down"> <small> Se encuentran vulnerabilidades comunes en temas de encripción y tráfico de datos </small> </p>
+					<p class="fragment fade-down"> <small> Los cuadrantes ayudan a mostrar el nivel de impacto a cada actor involucrado con la aplicación </small> </p>
+					<p class="fragment fade-down"> <small> Explotar vulnerabilidades encontradas puede ser de alto impacto positivo para la seguridad de las aplicaciones </small> </p>
+					<aside class="notes">
+						Vulnerabilidades presentes en los broadcast receivers pueden ser explotadas de manera directa.
+					</aside>
+				</section>
+				<section>
+					<h2> ¡Gracias! </h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,16 @@
+#left-p{
+	position: absolute;
+	left: 0px;
+	padding-right: 500px;
+}
+
+#center-p{
+	position: center;
+	padding: 5px;
+}
+
+#right-p{
+	position: absolute;
+	right: 0px;
+	padding-left: 200px;
+}
